@@ -1,0 +1,370 @@
+<!-- /*
+* Template Name: 붉은 불개미앱
+* Template Author: Untree.co
+* Tempalte URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+  <title> 붉은불개미 판별 시스템 </title>
+  <meta name="title" content="붉은불개미 판별 시스템" />
+  <link rel="stylesheet" href="style.css" />
+<meta property="og:url" content="index.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="붉은 불개미 판별시스템" />
+  <meta property="og:description" content="붉은 불개미는 생태계를 교란시키는 생물로 지정이 되었다. 
+          이미 미국에서는 생태계를 황폐화 시켰으며 , 그에 따른 생물적 피핸는 매우 크다. 앱을 통해, 붉은 불개미의 판별을 쉽게 할 수 있도록 도와 , 생태계를 유지시킨다.  " />
+  <meta property="og:image" content="img/og.png" />
+
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
+
+  <!-- Theme Style -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+
+  <nav class="unslate_co--site-mobile-menu">
+    <div class="close-wrap d-flex">
+      <a href="#" class="d-flex ml-auto js-menu-toggle">
+        <span class="close-label">Close</span>
+        <div class="close-times">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+        </div>
+      </a>
+    </div>
+    <div class="site-mobile-inner"></div>
+  </nav>
+
+  <div class="unslate_co--site-wrap">
+
+    <div class="unslate_co--site-inner">
+
+      <nav class="unslate_co--site-nav site-nav-target">
+
+        <div class="container">
+        
+          <div class="row align-items-center justify-content-between text-left">
+            <div class="col-md-5 text-right">
+              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                <li class="has-children">
+                  <a href="#home-section" class="nav-link">Home</a>
+                  
+                </li>
+                <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
+                <li><a href="#about-section" class="nav-link">About</a></li>
+                
+              </ul>
+            </div>
+            <div class="site-logo pos-absolute">
+              <a href="index.html" class="unslate_co--site-logo">붉은 불개미앱<span>.</span></a>
+            </div>
+            <div class="col-md-5 text-right text-lg-left">
+            
+            </div>
+          </div>
+        </div>
+
+      </nav>
+      <!-- END nav -->
+
+      <div class="cover-v1 gradient-bottom-black jarallax">
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-md-10 mx-auto text-center">
+              <h1 class="heading" data-aos="fade-up">붉은 불개미</h1>
+              <h2 class="subheading" data-aos="fade-up" data-aos-delay="100">우리나라에서 많이 발견되는 개미종과 붉은 불개미로 오인하기 쉬운 개미종,  </br> 총 7종 중 인식을 합니다.  
+              </br> 데이터에 기재된 개미 이외는 유사한 개미로 추출합니다. </h2>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- dov -->
+        <a href="#portfolio-single-section" class="mouse-wrap smoothscroll">
+          <span class="mouse">
+            <span class="scroll"></span>
+          </span>
+          <span class="mouse-label">Scroll</span>
+        </a>
+
+      </div>
+      <!-- END .cover-v1 -->
+
+      <div class="container">
+       
+        <div class="container file-upload">
+          <div class="image-upload-wrap">
+            <input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*" />
+            <div class="drag-text">
+              <img src="img/upload.png" class="mt-5 pt-5 upload" style="width: 20%;" />
+              <h3 class="mb-5 pb-5 pt-4 upload-text">
+              예시처럼  한마리만 </br> 캡쳐하여 자른다음</br>업로드 해주세요.
+              </h3>
+            </div>
+          </div>
+          <div class="file-upload-content">
+            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+            <div id="loading" class="animated bounce">
+              <div class="spinner-border" role="status">
+                <span class="sr-only">.</span>
+              </div>
+              <p class="text-center"> AI가 분석 중입니다..</p>
+            </div>
+            <p class="result-message"></p>
+            <div id="label-container" class="d-flex flex-column justify-content-around"></div>
+    
+    
+            <div class="pt-3 image-title-wrap">
+              <button type="button p-2" class="try-again-btn" onclick="window.location.reload();">
+                <span class="try-again-text"> 한 번 더 </span>
+              </button>
+              <div class="bottom-default">
+                <div class="share-text"> 붉은불개미 및 외래병해충 신고</div>
+                <a>	농림축산식품부  :</a><a href="tel:054-912-0616">전화하기</a>
+            </div>
+          </div>
+          <div id="webcam-container"></div>
+          <!-- Option 1: Bootstrap Bundle with Popper -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"></script>
+    
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+            integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+            crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+            integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+            crossorigin="anonymous"></script>
+    
+          <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+          <script
+            src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+          <script>
+            function readURL(input) {
+              if (input.files && input.files[0]) {
+                var reader = new FileReader();
+    
+                reader.onload = function (e) {
+                  $('.image-upload-wrap').hide();
+                  $('#loading').show();
+                  $('.file-upload-image').attr('src', e.target.result);
+                  $('.file-upload-content').show();
+                  $('.image-title').html(input.files[0].name);
+                };
+                reader.readAsDataURL(input.files[0]);
+                init().then(() => {
+                  predict();
+                  $('#loading').hide();
+                });
+              } else {
+                removeUpload();
+              }
+            }
+    
+            function removeUpload() {
+              $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+              $('.file-upload-content').hide();
+              $('.image-upload-wrap').show();
+            }
+            $('.image-upload-wrap').bind('dragover', function () {
+              $('.image-upload-wrap').addClass('image-dropping');
+            });
+            $('.image-upload-wrap').bind('dragleave', function () {
+              $('.image-upload-wrap').removeClass('image-dropping');
+            });
+          </script>
+          <script type="text/javascript">
+            // More API functions here:
+            // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+    
+            // the link to your model provided by Teachable Machine export panel
+            const URL = "https://teachablemachine.withgoogle.com/models/xfxFq8BuB/";
+    
+            let model, webcam, labelContainer, maxPredictions;
+    
+            // Load the image model and setup the webcam
+            async function init() {
+              const modelURL = URL + 'model.json';
+              const metadataURL = URL + 'metadata.json';
+    
+    
+              model = await tmImage.load(modelURL, metadataURL);
+              maxPredictions = model.getTotalClasses();
+              labelContainer = document.getElementById('label-container');
+              for (let i = 0; i < maxPredictions; i++) {
+                // and class labels
+                labelContainer.appendChild(document.createElement('div'));
+              }
+            }
+            // run the webcam image through the image model
+            async function predict() {
+              // predict can take in an image, video or canvas html element
+              var image = document.getElementById('face-image');
+              const prediction = await model.predict(image, false);
+              prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+              console.log(prediction[0].className);
+              var resultMessage, resultExplain, resultCeleb,resultImg;
+              switch (prediction[0].className) {
+                case "1":
+                  resultMessege = "곰개미 ";
+                  resultExplain = "전체적으로 회색 빛이 도는 갈색이거나 흑갈색을 띠며 일개미는  4.5~6mm, 여왕개미는 약 13mm, 수개미는 약 11mm이다. .";
+                  resultCeleb = "Ai 결과, 애집개미로 판독 되었습니다.";
+                  resultImg="<img src=\"gom.jpg\" width=200, height=200>";
+                  break;
+                case "2":
+                  resultMessege = "애집개미";
+                  resultExplain = "	몸은 밝은 노란색이나 주황색이며 배에 검은 얼룩이 있다. 일개미는 약 2 mm, 여왕개미는 약 3 mm이다. 한 집단에 여러 마리의 여왕이 동거한다. . ";
+                  resultCeleb = "Ai 결과, 애집개미로 판독 되었습니다. ";
+                  resultImg="<img src=\"aw.png\" width=200, height=200>";
+                  break;
+                case "3":
+                  resultMessege = " 일본왕개미 ";
+                  resultExplain = " 몸의 길이는 여왕개미가 평균 17mm, 수개미 10mm, 일개미는 7~13mm 내외이다. 결혼비행은 5월에서 9월까지 진행된다.한국 홍가슴개미처럼 크기가 크다.";
+                  resultCeleb = "Ai 결과, 일본왕개미로 판독 되었습니다. ";
+                  resultImg="<img src=\"japan.png\"width=200, height=200>";
+                  break;
+              
+                case "4":
+                  resultMessege = "붉은불개미";
+                  resultExplain = "적갈색을 띠고 있으며 몸길이 3~6mm 크기로, 꼬리 부분에 날카로운 침을 지니고 있다. 이 침에 찔릴 경우 심한 통증과 가려움증을 동반하고 심할 경우 현기증과 호흡곤란 등의 과민성 쇼크를 유발한다.";
+                  resultCeleb = " Ai 결과, 붉은불개미로 판독 되었습니다.";
+                  resultImg="<img src=\"bul.png\" width=200, height=200>";
+                  break;
+                case "5":
+                  resultMessege = "노란꼬리치레개미";
+                  resultExplain = "몸은 투명한 노란색이고 배 부분에 연한 줄무늬가 있다. 일개미는 약 2.5~3 mm, 여왕개미는 약 6.5~7 mm이다.무리지어 있는 경우가 많다. 위협을 느끼면 배를 쳐들고 독을 물방울처럼 방출한다.";
+                  resultCeleb = "Ai 결과, 노란꼬리치레개미로 판독 되었습니다. ";
+                  resultImg="<img src=\"noran.jpg\" width=200, height=200>";
+                  break;
+                case "6":
+                  resultMessege = "혹개미";
+                  resultExplain = "몸길이 일개미 약 2.5m 이다.  몸빛깔은 암적갈색이고 머리와 배는 짙은 빛깔이며 다리는 황색이다.  머리에 세로로 주름이 있고 가슴은 거칠며 배자루 및 배는 매끈하고 광택이 있다. ";
+                  resultCeleb =  "Ai 결과, 혹개미로 판독 되었습니다. ";
+                  resultImg="<img src=\"hok.jpg\"width=200, height=200>";
+                  break;
+                case "7":
+                  resultMessege = "판별이 불가능한 물체";
+                  resultExplain = "죄송합니다. 한번 더 시도해주세요";
+                  resultCeleb = "ai 결과, 인식이 불가능합니다.";
+                  break;
+                case "8":
+                  resultMessege = "권연침벌.";
+                  resultExplain = "암컷은 몸길이 약 2mm, 수컷은 1.5mm에 달하며 몸무게는 0.2mg이고 몸은 적갈색으로 광택이 있다.  ";
+                  resultCeleb = "Ai 결과,권연침벌로 판독 되었습니다. ";
+                  resultImg="<img src=\"gon.jpg\" width=200, height=200>";
+                  break;
+            
+              }
+              var title =
+                "<div class='a-animal-title'>" +
+                resultMessege +
+                '</div>';
+              var explain = "<div class='animal-explain pt-2'>" + resultExplain + '</div>';
+              var celeb =
+                "<div class='a-animal-celeb pt-2 pb-2'>" +
+                resultCeleb +"<hr/> <h2 style=\"color:blue\"; >실제 이미지와 비교해보세요!</h2><hr/>"+resultImg+
+                '</div>';
+              $('.result-message').html(title + explain + celeb);
+    
+            }
+          </script>
+          <script>
+    
+            function shareCopy(val) {
+              let t = document.createElement("textarea");
+              document.body.appendChild(t);
+              t.value = val;
+              t.select();
+              document.execCommand("copy");
+              document.body.removeChild(t);
+            }
+    
+            $("#copy").click(function () {
+              shareCopy("054-912-0616");
+              alert("복사되었습니다.");
+            });
+            function checkMobile() {
+              let varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기
+    
+              if (varUA.indexOf("android") > -1) {
+                //안드로이드
+                return "android";
+              } else if (
+                varUA.indexOf("iphone") > -1 ||
+                varUA.indexOf("ipad") > -1 ||
+                varUA.indexOf("ipod") > -1
+              ) {
+                //IOS
+                return "ios";
+              } else {
+                //아이폰, 안드로이드 외
+                return "other";
+              }
+            }
+          </script>
+          
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <footer class="unslate_co--footer unslate_co--section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-7">
+              
+              <div class="footer-site-logo"><a href="#">붉은 불개미앱<span>.</span></a></div>
+
+              <ul class="list-unstyled social-icons light">
+          <li><a href="#"><span class="icon-facebook"></span></a></li>
+          <li><a href="#"><span class="icon-twitter"></span></a></li>
+          <li><a href="#"><span class="icon-linkedin"></span></a></li>
+          <li><a href="#"><span class="icon-google"></span></a></li>
+          <li><a href="#"><span class="icon-play"></span></a></li>
+        </ul>
+
+              <p class="site-copyright"><small>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co" target="_blank" rel="nofollow noopener">Untree.co</a> &bullet; <a href="https://untree.co/license" target="_blank" rel="nofollow noopener">License</a> </small></p>
+
+            </div>
+          </div>
+        </div>
+      </footer>
+
+  </div>
+
+  <!-- Loader -->
+  <div id="unslate_co--overlayer"></div>
+  <div class="site-loader-wrap">
+    <div class="site-loader"></div>
+  </div>
+
+  <script src="js/scripts-dist.js"></script>
+  <script src="js/main.js"></script>
+
+  
+</body>
+
+</html>

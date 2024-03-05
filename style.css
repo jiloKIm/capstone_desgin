@@ -1,0 +1,472 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
+body {
+
+  background-image: url(AA.png);
+  box-sizing: border-box;
+  color: rgb(247, 247, 247);
+  background-size: cover;
+ font-family: 'Nanum Gothic', sans-serif;
+  font-size: 20px;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0);
+}
+.bottom-default .share-text {
+  font-size: 30px;
+  line-height: 28px;
+  color: #3c3c3c;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.copy{
+  margin-top: 100px;
+}
+.bottom-default .share-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.bottom-default .share-btn img {
+  max-width: 200px;
+}
+.bottom-default .share-btn li {
+  cursor: pointer;
+}
+.sr-only{ 
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0);
+}
+.section{ 
+  color: rgb(247, 247, 247);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0);
+}
+.a-animal-title{
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+ font-family: 'Nanum Gothic', sans-serif;
+  font-size: 40px;
+  
+ }
+.animal-explain.pt-2{
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+ font-family: 'Nanum Gothic', sans-serif;
+  font-size: 25px;
+ }
+.a-animal-celeb.pt-2.pb-2{
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+ font-family: 'Nanum Gothic', sans-serif;
+  font-size: 20px;
+ }
+p{ color:rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0);
+}
+
+.navbar-light .navbar-brand {
+  line-height: 1.68;
+  text-align: left;
+  color: rgb(247, 247, 247);
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+    color: rgb(247, 247, 247);;
+  }
+    .navbar-brand {
+        font-size: 2rem;
+        color: rgb(247, 247, 247);
+    }
+}
+
+
+.navbar-light .navbar-toggler {
+    border-color: rgb(247, 247, 247);
+    color: rgb(247, 247, 247);
+    
+} 
+.file-upload {
+    padding: 15% 3%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: solid 1.5px #f6f7fa;
+    background-color: #b6b6b694;
+}
+.file-upload-btn {
+  width: 100%;
+  margin: 0;
+  color: rgb(247, 247, 247);
+  background: #1f2bb2;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #1b1582;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.file-upload-btn:hover {
+  background: #211aa0;
+  color: #aaa7a7;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+.five-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 250px;
+
+}
+.file-upload-btn:active {
+  border: 0;
+  transition: all .2s ease;
+}
+.kakao_ad_area{ 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+#loading {
+  display: none;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+.pt-2{color: rgb(216, 152, 152);}
+.image-upload-wrap {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    object-fit: contain;
+    border-radius: 10px;
+    border: dashed 1.5px rgb(247, 247, 247);
+    background-color: #4950b2;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+    background-color: #475fcb82;
+    border: 1.5px dashed rgb(247, 247, 247);
+}
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+}
+
+.drag-text h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.file-upload-image {
+  max-height: 60%;
+  max-width: 60%;
+  margin: auto;
+  padding: 10px;
+}
+
+.try-again-btn {
+  border-radius: 40px;
+  border: solid 1.5px #474747;
+  background-color: #616161;
+}
+
+.try-again-text {
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  color: rgb(247, 247, 247);
+  padding: 4px 15px;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: rgb(247, 247, 247);
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+
+
+.section {
+    margin-top: 50px;
+}
+
+.title {
+  line-height: 1.67;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.subtitle {
+  line-height: 1.53;
+  text-align: center;
+  color: rgb(247, 247, 247);
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+  
+}
+
+
+.upload {
+    width: 20%;
+}
+
+.upload-text {
+    width: 58%;
+    font-size: 1.5rem;
+    line-height: 1.53;
+    text-align: center;
+    color: rgb(247, 247, 247);
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: initial;
+    color: initial;
+}
+
+.bar-container {
+  height: 2.7rem;
+ font-family: 'Nanum Gothic', sans-serif;
+  -webkit-text-stroke: 1px #000;
+}
+.fire-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(78, 78, 78, 0.2);
+}
+.fire-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgb(247, 247, 247);
+}
+.water-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(78, 78, 78, 0.2);
+}
+.water-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgb(247, 247, 247);
+}
+.wood-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(78, 78, 78, 0.2);
+ 
+}
+.wood-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgb(247, 247, 247);
+}
+.metal-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(78, 78, 78, 0.2);
+}
+.metal-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgb(247, 247, 247);
+}
+.ground-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(78, 78, 78, 0.2);
+}
+.ground-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgb(247, 247, 247);
+}
+.percent-text {
+  font-size: 1rem;
+  color: rgb(247, 247, 247);
+}
+.animal-label {
+    width: 20%;
+    text-align: left;
+    height: 2rem;
+}
+#label-container {
+    width: 80%;
+    margin: 0 auto;
+}
+.result-message {
+    font-size: 2rem;
+}
+
+
+
+
+label {
+  cursor: pointer;
+  display: inline-block;
+  width: 90px;
+  height: 41px;
+  box-shadow: 0 0 0 8px #e5e9ea inset;
+  border-radius: 30px;
+  position: relative;
+}
+
+.knob {
+  position: absolute;
+  width: 41px;
+  top: 0;
+  left: 0;
+  height: 41px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px #f470a7 inset;
+  background-color: #fbd4e6;
+  transition: 0.3s;
+}
+
+.knob > i {
+  position: absolute;
+  width: 4px;
+  height: 18px;
+  top: 100%;
+  background-color: #f470a7;
+  left: calc(50% - 2px);
+}
+
+.knob > i:before,
+.knob > i:after {
+  width: 6px;
+  position: absolute;
+  top: 42%;
+  content: "";
+  height: 4px;
+  background-color: #f470a7;
+}
+
+.knob > i:before {
+  left: 4px;
+}
+.knob > i:after {
+  left: -6px;
+}
+
+input:checked + label > .knob {
+  box-shadow: 0 0 0 8px #a1c6dd inset;
+  background-color: #e2ecf4;
+  transform: translateX(49px) rotate(-140deg);
+}
+
+input:checked + label > .knob > i {
+  background-color: #a1c6dd;
+}
+
+input:checked + label > .knob > i:after,
+input:checked + label > .knob > i:before {
+  background-color: #a1c6dd;
+}
+
+input:checked + label > .knob > i:after {
+  top: 14.5px;
+  width: 12px;
+  left: -7px;
+  transform: rotate(45deg);
+}
+input:checked + label > .knob > i:before {
+  top: 13px;
+  width: 12px;
+  left: 0px;
+  transform: rotate(134deg);
+}
+.likelion-logo {
+  width: 96px;
+  margin: 0 auto;
+
+}
+.ad-banner {
+    max-width: 320px;
+}
+.copyright-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 12px;
+  color: rgb(247, 247, 247);
+}
+.copy{ 
+
+
+}
+
+.logo {
+  width: 58%;
+  font-size: 1.5rem;
+  line-height: 1.53;
+  text-align: center;
+  color: #35465d;
+  margin: 0 auto;
+}
